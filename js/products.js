@@ -16,7 +16,7 @@ async function fetchAllProducts() {
       console.log(product['_id'])
       productHTML += `
                 <div class="product-item">
-                  <h2>${product.title}</h2>
+                  <h3>${product.title}</h3>
                   <p>${product.category}</p>
                   <p>${product.description}</p>
                   <p>${product.price}</p>
@@ -30,26 +30,3 @@ async function fetchAllProducts() {
     console.log(error);
   }
 }
-// function deleteProduct() {
-//     let deleteLinks = document.getElementsByClassName('delete-link');
-//     console.log(deleteLinks);
-
-//     for (let link of deleteLinks) {
-//         link.addEventListener('click', async function(e) {
-//             e.preventDefault();
-
-//             try {
-//                 await fetch('https://puns-app.herokuapp.com/puns/' + e.target.dataset.id,
-//                     {
-//                         method: 'DELETE'
-//                     }
-//                 );
-
-//                 e.target.parentNode.parentNode.remove();
-//             } catch(error) {
-//                 console.log(error)
-//             }
-
-//         })
-//     }
-// }
