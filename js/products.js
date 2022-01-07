@@ -21,6 +21,7 @@ async function fetchAllProducts() {
                   <p>${product.description}</p>
                   <p>${product.price}</p>
                   <p>${product.stock}</p>
+                  <p>${formatedDate}</p>
                 </div>
             `;
     }
