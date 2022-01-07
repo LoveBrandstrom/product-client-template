@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create</title>
 </head>
+
 <body>
-    
+
+    <div id="container">
+        <h1>New product</h1>
+
+        <form id="create-product-form">
+            <label for="">Title</label>
+            <input type="text" name="title" id="title-textarea" cols="10" rows="1"></input>
+            <label for="">Description</label>
+            <input type="text" name="description" id="description-textarea" cols="10" rows="1"></input>
+            <label for="">Price</label>
+            <input type="text" name="price" id="price-textarea" cols="10" rows="1"></input>
+            <label for="">Stock</label>
+            <input type="text" name="stock" id="stock-textarea" cols="10" rows="1"></input>
+            <label for="">Category</label>
+            <input type="text" name="category" id="category-textarea" cols="10" rows="1"></input>
+
+            <input type="submit" value="Create">
+            <a href="index.html">&#x2190; back</a>
+        </form>
+
+    </div>
+    <script src="js/createproduct.js"></script>
 </body>
+
 </html>
